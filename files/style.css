@@ -1,17 +1,77 @@
-.jetbrains-mono-<uniquifier > {
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-body {
-    background-color: #FFFFF;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 16px;
-    padding: 20px;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
-.hl {
-    font-family: "JetBrains Mono", monospace;
-    color: #1b2432;
-    font-size: 72px;
+
+header {
+    height: 20vh;
+    width: 100vw;
+    background-color: green;
+    background-size: cover;
 }
+
+.navbar {
+    position : absolute;
+    padding : 50px;
+    display : flex;
+    justify-content : space-between;
+    width : 100%;
+    box-sizing: border-box;
+
+}
+
+.navbar a {
+    color: black;
+
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 20px;
+    font-weight: bold;  
+}
+
+.navbar .nav-links ul li.active a {
+    font-weight: 600;
+}
+
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
